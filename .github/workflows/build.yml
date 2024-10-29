@@ -3,7 +3,7 @@ name: Build Docker Container
 on:
   push:
     branches:
-      - develop
+      - develop/docker-build/Dockerfile
 
 
 jobs:
