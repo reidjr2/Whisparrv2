@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - develop
-image: 'distribution/docker-build'
+
 
 jobs:
   docker:
@@ -27,5 +27,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
+          context: "{{defaultContext}}:distribution/docker-build"
           push: true
           tags: reidjr/test_docker:latest
