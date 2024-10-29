@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - develop
-image: '../../Dockerfile'
+image: 'distribution/docker-build'
 
 jobs:
   docker:
