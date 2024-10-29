@@ -1,9 +1,10 @@
+
 name: Build Docker Container
 
 on:
   push:
     branches:
-      - develop/docker-build/Dockerfile
+      - develop/distribution/docker-build/Dockerfile
 
 
 jobs:
